@@ -1,0 +1,26 @@
+<div class="container">
+    
+    <mat-card>
+        <mat-card-title>Arrendatario</mat-card-title>
+        <img src="../../../assets/images/user.png" alt="">
+        <mat-card-content>     
+            <mat-form-field>
+              <input matInput  placeholder="email" type="email" id="email" #email>
+            </mat-form-field>
+            <p></p>
+            <mat-form-field>
+              <input matInput  placeholder="contraseña" type="password" id="password" #password>
+            </mat-form-field>
+            <p></p>
+            <button mat-raised-button  color="primary" (click)="logWithGoogle()" >Google</button>
+            <p></p>
+            <button   mat-raised-button color="primary" (click)="logIn(email.value,password.value)">
+              <mat-icon>add_circle_outline</mat-icon>
+              Entrar
+            </button>
+        </mat-card-content>
+      </mat-card>
+      
+      
+</div>
+
